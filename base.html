@@ -16,9 +16,12 @@
 
 		<h1>Les bases du html</h1>
 
-			<h2>Notions de balises</h2>
+			<h2 id="encre2">Notions de balises</h2>
 
-				<p>Les balises faites avec "< >" pour l'ouvrante et "< /  >" pour la fermante servent à structurer le texte<br/> "br" permet de sauter une ligne</p>
+				<p>
+					Les balises faites avec "< >" pour l'ouvrante et "< /  >" pour la fermante servent à structurer le texte<br/> 
+					"br" permet de sauter une ligne
+				</p>
 				<ul>
 						<li>moi je fait des listes non-organisées</li>
 						<li>
@@ -40,9 +43,70 @@
 					<dt>terme n°2</dt>
 					<dd>définition du terme n°2</dd>
 				</dl>
-				<p>Quoi ptit bastard? t'aime pas mon site? tu veux te casser? <br> bon bah vas-y, vas voir <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/creer-des-liens">ces bouffons</a>, tu kifferas surement mieux!</p>
-				<p>oui tu peut écrire dans le vide mais ton texte n'est pas référencé :/</p>
-				<!-- dans l'url, il faut penser à remplacer tout les "&" par "&amp;" ça fait partie du code! -->
+
+			<h2>Notion de liens</h2>
+				
+				<h3>Liens vers d'autres sites</h3>
+					<p id="encre1">Quoi ptit batard? t'aime pas mon site? tu veux te casser? <br> bon bah vas-y, vas voir <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/creer-des-liens">ces bouffons</a>, tu kifferas surement mieux!</p>
+					oui tu peut écrire dans le vide mais ton texte n'est pas référencé :/
+						<!-- dans l'url, il faut penser à remplacer tout les "&" par "&amp;" ça fait partie du code! -->
+
+				<h3>Lien vers d'autres pages</h3>
+
+					<p>c'est page sont soit intégrées dans :</p>
+					<ul>
+						<li>
+							<h4>Un autre fichier du <em> même</em> document</h4> 
+							<p>Dans ce cas tu fait un lien <a href="base2.html">comme-ça</a>!! </p>
+						</li>
+						<li>
+							<h4>Soit c'est dans <mark>un autre document</mark> </h4>
+							<p>Ici, 2 cas possible:</p>
+								<ul>
+									<li>
+										<h5>dans un sous document <strong>contenu</strong> dans le document contenant la présente page</h5>
+										<p>Dans ce cas, il suffit de faire comme <a href="fun/fun.html" title="Nen!!! fait gaffe!! clique pas!!">ceci</a>!</p>
+									</li>
+									<li>
+										<h5>dans un document lui même situé dans un document parent</h5> 
+										<p>voir la <a href="fun/fun.html">fun-page</a> où les explications seront données</p>
+									</li>
+								</ul>
+						</li>
+						
+					</ul>
+
+				<h3>Lien vers des encres</h3>
+
+						<!-- ne pas oublier le "#" devant le nom de l'encre -->
+
+					<h4>D'une même page</h4>
+						<p>c'est pour ammener à un endroit précis de la page, à une "encre" incorporé dans n'import quelle balise par l'argument "id" <br>Tu peut ensuite t'y rendre en créant un lien<br>Exemple : Aller à "<a href="#encre1">Quoi ptit batard?</a>" liens vers d'autres sites.</p>
+					<h4>D'une autre page</h4>
+					<p id="encre3">Cette encre peut également être comprise dans une autre page<br>Rend toi à la <a href="base2.html">page2</a> pour voir ça!!<br>En cliquant sur <mark>"retour"</mark> tu reviendras directement ici!!</p>
+
+				<h3>Liens utilitaires</h3>
+
+					<h4>Infobulle</h4>
+
+						<p>Avec la balise "title" intégrée juste après le lien on peut donnée une info sur un lien comme cela : Vas à la <a href="fun/fun.html" title="Elle est vraiment super fun!! ;)">Fun-Page</a> !!!</p>
+
+					<h4>Faire ouvrir le lien dans une nouvelle fenêtre</h4>
+
+						<p>Tu peut faire ça en rajoutant target="_blank"  dans la balise<br>Regarde, on peut ouvrir le site où t'es entrain d'apprendre tout ça dans cette <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/creer-des-liens" target="_blank">nouvelle fenêtre</a> !!</p>
+
+					<h4>Faire écrire un mail à une adresse</h4>
+
+						<p>c'est comme le reste des liens, sauf que lui commence par "mailto:". Les gens peuvent donc m'écrire des mails <a href="mailto:captain_kapudoeil@sfr.fr">ici</a>.</p>
+
+					<h4>Faire télécharger un fichier</h4>
+
+						<p>Il suffit de donner l'emplacement et le nom complet du fichier à télécharger : <br />
+						télécharge <a href="../git.pdf" title="t'inquiète c'est pas méchant :)" target="_blank">ce doc</a> pour comprendre ^^ <br />
+						Ici c'est dans un nouvel onglet mais c'est pas obligé!!</p>
+
+						<p>Pour la suite du cour, rendez-vous à la <a href="fun/fun.html#encre2" title="YIIIHHHAAA!!! C'est parti!!">Fun page, partie "insertion d'image"</a>.</p>
+
 	</body>
 
 </html>
