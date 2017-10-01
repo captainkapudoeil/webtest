@@ -3,7 +3,8 @@
 <html lang="fr">
 	
 	<head>
-		
+		<!-- soit tu précise un doc.css pour toute la mise en forme, c'est la meilleur solution! -->
+		<link rel="stylesheet" type="text/css" href="base.css">
 		<meta charset="UTF-8">
 		<title>mon site perso</title>
 	
@@ -14,11 +15,11 @@
 
 		<!-- Et la c'est tout ce qu'il y aura sur la page -->
 
-		<h1>Les bases du html</h1>
+		<h1>Les bases du <span class="gros">html</span></h1>
 
 			<h2 id="encre2">Notions de balises</h2>
 
-				<p>
+				<p class="intro">
 					Les balises faites avec "< >" pour l'ouvrante et "< /  >" pour la fermante servent à structurer le texte<br/> 
 					"br" permet de sauter une ligne
 				</p>
@@ -81,7 +82,7 @@
 						<!-- ne pas oublier le "#" devant le nom de l'encre -->
 
 					<h4>D'une même page</h4>
-						<p>c'est pour ammener à un endroit précis de la page, à une "encre" incorporé dans n'import quelle balise par l'argument "id" <br>Tu peut ensuite t'y rendre en créant un lien<br>Exemple : Aller à "<a href="#encre1">Quoi ptit batard?</a>" liens vers d'autres sites.</p>
+						<p class="intro">c'est pour ammener à un endroit précis de la page, à une "encre" incorporé dans n'import quelle balise par l'argument "id" <br>Tu peut ensuite t'y rendre en créant un lien<br>Exemple : Aller à "<a href="#encre1">Quoi ptit batard?</a>" liens vers d'autres sites.</p>
 					<h4>D'une autre page</h4>
 					<p id="encre3">Cette encre peut également être comprise dans une autre page<br>Rend toi à la <a href="base2.html">page2</a> pour voir ça!!<br>En cliquant sur <mark>"retour"</mark> tu reviendras directement ici!!</p>
 

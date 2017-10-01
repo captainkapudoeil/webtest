@@ -1,0 +1,76 @@
+p
+
+{
+
+    color: blue;
+
+}
+/* 
+Ceci est la construction de base d'un code css, en premier on nomme la balise que l'on veut affecter
+, ici, on parle donc de tout les paragraphes, puis entre les {  } on désigne la propriété
+sur laquelle on veut jouer et on lui donne une valeur, on obtient donc:
+balise
+{
+	propriété 1: valeur 1;
+	propriété 2: valeur 2;
+}
+*/
+h1, strong
+/*la virgule permet d'enchainer plusieurs balises ayant les mêmes définitions!*/
+{
+	color: red;
+}
+h2
+{
+	color: green;
+}
+/*mais la on fait du général, pour travailler sur une balise précise, il faut la nommer
+avec : 
+- l'attribut class=" " si il y en a plusieur, elle se précéde avec .
+- l'attribut id=" "si elle est unique, elle se précéde avec #
+*/
+.intro
+{
+	color: grey;
+}
+/*Pour pouvoir rajoutter ces attributs partout, on peut utiliser les balises universelles
+<span> pour entourer une portion de block
+<div> pour entourer un block (oblige un retour à la ligne)
+*/
+.gros
+{
+	color: purple;
+}
+/* Les sélecteurs sont donc :
+- les balises
+- des listes de balises
+- des noms d'attributs (id ou class)
+Et il y en a d'autres!!!*/
+/* sélecteur universel * ,sélectionne toutes les balises*/
+/* Balise dans balise b1 b2 sans virgule, sélectionne toutes les b2 contenue dans des b1*/
+/* b1 + b2 ,sélectionne toutes les b2 suivant des b1 */
+/* b[attribut] , toutes les balises de se format, ex : a[title] -> toutes les <a> avec un "title"*/
+/* b[attribut="valeur"] , la valeur doit être intègre et exacte */
+/* b[attribut*="valeur"] , la valeur doit être contenue */
+p
+
+{
+
+    font-size: 14px; /* Paragraphes de 14 pixels */
+
+}
+
+h1
+
+{
+
+    font-size: 40px; /* Titres de 40 pixels */
+
+}
+/*ça ces des valeurs absolues*/
+/*on va préférer des valeurs relatives "qui s'adaptent"*/
+h2
+{
+	font-size: 1.9em;
+}
+/* 1em correspond à la taille normale*/
